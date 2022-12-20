@@ -18,8 +18,7 @@ public class Class1
 {
 	
 	WebDriver driver;
-
-	@BeforeClass
+    @BeforeClass
 	public void lounchBrowser()
 	{
 		WebDriverManager.chromedriver().setup();
@@ -51,13 +50,11 @@ public class Class1
 			Assert.assertEquals(country1, "India");
 	}
 
-    
-	@AfterClass
+    @AfterClass
 	public void closeBrowser()
 	{
 		driver.close();
 	}
-
 }
 
 
